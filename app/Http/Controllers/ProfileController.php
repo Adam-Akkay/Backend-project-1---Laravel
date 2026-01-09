@@ -15,7 +15,10 @@ class ProfileController extends Controller
      */
     public function show(User $user)
     {
+<<<<<<< HEAD
         $user->load(['profileMessages.author', 'authoredMessages']);
+=======
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
         return view('profiles.show', compact('user'));
     }
 

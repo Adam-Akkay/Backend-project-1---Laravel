@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+<<<<<<< HEAD
         // Create or update default admin user
         User::updateOrCreate(
             ['email' => 'admin@ehb.be'],
@@ -28,5 +29,14 @@ class DatabaseSeeder extends Seeder
 
         // Seed FAQ data
         $this->call(FaqSeeder::class);
+=======
+        // Create default admin user
+        User::create([
+            'name' => 'Admin',
+            'email' => 'admin@ehb.be',
+            'password' => Hash::make('Password!321'),
+            'role' => 'admin',
+        ]);
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
     }
 }

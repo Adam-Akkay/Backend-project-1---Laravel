@@ -45,6 +45,7 @@
             @endif
         @endauth
     </div>
+<<<<<<< HEAD
 
     <!-- Profile Wall Section -->
     <div class="bg-white rounded-lg shadow-md p-6 mt-6">
@@ -105,5 +106,7 @@
             @endforelse
         </div>
     </div>
+=======
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
 </div>
 @endsection

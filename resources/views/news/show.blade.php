@@ -9,6 +9,7 @@
             <img src="{{ asset('storage/' . $news->image) }}" alt="{{ $news->title }}" class="w-full h-64 object-cover">
         @endif
         <div class="p-6">
+<<<<<<< HEAD
             <div class="flex justify-between items-start mb-4">
                 <h1 class="text-3xl font-bold">{{ $news->title }}</h1>
                 @auth
@@ -30,6 +31,9 @@
                     </form>
                 @endauth
             </div>
+=======
+            <h1 class="text-3xl font-bold mb-4">{{ $news->title }}</h1>
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
             <p class="text-gray-600 text-sm mb-6">{{ $news->published_at->format('d/m/Y') }}</p>
             <div class="prose max-w-none">
                 {!! nl2br(e($news->content)) !!}
@@ -41,6 +45,7 @@
             </div>
         </div>
     </article>
+<<<<<<< HEAD
 
     <!-- Comments Section -->
     <div class="bg-white rounded-lg shadow-md p-6 mt-6">
@@ -101,5 +106,7 @@
             @endforelse
         </div>
     </div>
+=======
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
 </div>
 @endsection

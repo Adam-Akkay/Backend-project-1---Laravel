@@ -59,6 +59,7 @@ class User extends Authenticatable
     {
         return $this->role === 'admin';
     }
+<<<<<<< HEAD
 
     /**
      * Get the comments written by this user
@@ -91,4 +92,6 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(News::class, 'favorites')->withTimestamps();
     }
+=======
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
 }

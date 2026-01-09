@@ -8,6 +8,13 @@ use Illuminate\Support\Facades\Storage;
 
 class NewsController extends Controller
 {
+<<<<<<< HEAD
+=======
+    public function __construct()
+    {
+        $this->middleware('admin')->except(['index', 'show']);
+    }
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
     /**
      * Display a listing of the resource.
      */
@@ -53,12 +60,16 @@ class NewsController extends Controller
      */
     public function show(News $news)
     {
+<<<<<<< HEAD
         $news->load('comments.user');
         
         // Check if current user has favorited this news item
         $isFavorited = auth()->check() && auth()->user()->favoriteNews()->where('news_id', $news->id)->exists();
         
         return view('news.show', compact('news', 'isFavorited'));
+=======
+        return view('news.show', compact('news'));
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
     }
 
     /**

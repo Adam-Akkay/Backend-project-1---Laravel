@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ContactMail;
+<<<<<<< HEAD
 use App\Models\ContactMessage;
+=======
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -28,6 +31,7 @@ class ContactController extends Controller
             'message' => 'required|string|max:2000',
         ]);
 
+<<<<<<< HEAD
         // Store message in database
         ContactMessage::create([
             'name' => $request->name,
@@ -37,6 +41,9 @@ class ContactController extends Controller
 
         // Send email notification
         Mail::to('adam.akkay@hotmail.com')->send(
+=======
+        Mail::to('julien_adan@hotmail.com')->send(
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
             new ContactMail($request->name, $request->email, $request->message)
         );
 

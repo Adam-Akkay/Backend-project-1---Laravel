@@ -15,7 +15,11 @@ class ContactMail extends Mailable
 
     public string $name;
     public string $email;
+<<<<<<< HEAD
     public string $contactMessage;
+=======
+    public string $message;
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
 
     /**
      * Create a new message instance.
@@ -24,7 +28,11 @@ class ContactMail extends Mailable
     {
         $this->name = $name;
         $this->email = $email;
+<<<<<<< HEAD
         $this->contactMessage = $message;
+=======
+        $this->message = $message;
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
     }
 
     /**

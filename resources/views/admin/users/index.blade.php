@@ -31,6 +31,7 @@
                         </span>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+<<<<<<< HEAD
                         <div class="flex space-x-4">
                             {{-- Hide "Admin verwijderen" button for protected admin (admin@ehb.be) --}}
                             @if($user->email !== 'admin@ehb.be')
@@ -55,6 +56,14 @@
                                 </form>
                             @endif
                         </div>
+=======
+                        <form method="POST" action="{{ route('admin.users.toggle-admin', $user) }}" class="inline">
+                            @csrf
+                            <button type="submit" class="text-blue-600 hover:text-blue-900">
+                                {{ $user->role === 'admin' ? 'Admin verwijderen' : 'Admin maken' }}
+                            </button>
+                        </form>
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
                     </td>
                 </tr>
             @endforeach

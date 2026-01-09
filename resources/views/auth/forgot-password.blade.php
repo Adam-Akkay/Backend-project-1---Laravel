@@ -7,6 +7,7 @@
     <div class="bg-white rounded-lg shadow-md p-6">
         <h2 class="text-2xl font-bold mb-6">Wachtwoord vergeten</h2>
         <p class="text-gray-600 mb-4">Vul uw e-mailadres in en we sturen u een link om uw wachtwoord te resetten.</p>
+<<<<<<< HEAD
 
         <form method="POST" action="{{ route('password.email') }}">
             @csrf
@@ -31,6 +32,9 @@
                 </a>
             </div>
         </form>
+=======
+        <p class="text-sm text-gray-500">Let op: Deze functionaliteit vereist een geconfigureerde mail server. Voor nu kunt u contact opnemen met de beheerder.</p>
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
     </div>
 </div>
 @endsection

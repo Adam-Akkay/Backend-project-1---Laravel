@@ -3,8 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+=======
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
 
 class News extends Model
 {
@@ -21,6 +24,7 @@ class News extends Model
             'published_at' => 'date',
         ];
     }
+<<<<<<< HEAD
 
     /**
      * Get the comments for this news item
@@ -37,4 +41,6 @@ class News extends Model
     {
         return $this->belongsToMany(User::class, 'favorites')->withTimestamps();
     }
+=======
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
 }

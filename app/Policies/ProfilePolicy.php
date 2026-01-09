@@ -36,8 +36,12 @@ class ProfilePolicy
      */
     public function update(User $user, User $model): bool
     {
+<<<<<<< HEAD
         // Users can edit their own profile, admins can edit any profile
         return $user->id === $model->id || $user->isAdmin();
+=======
+        return $user->id === $model->id; // Users can only edit their own profile
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
     }
 
     /**

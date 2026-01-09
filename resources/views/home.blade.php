@@ -14,8 +14,13 @@
             <h2 class="text-2xl font-semibold mb-4">Team Informatie</h2>
             <p class="text-gray-700 mb-2"><strong>Naam:</strong> Zaalvoetbal Soda JC</p>
             <p class="text-gray-700 mb-2"><strong>Adres:</strong> Dapperenstraat 20, 1081 Koekelberg</p>
+<<<<<<< HEAD
             <p class="text-gray-700 mb-4"><strong>Contactpersoon:</strong> Adam Akkay</p>
             <a href="https://maps.app.goo.gl/K1nSPWMKn1rvMRzu9" target="_blank" class="text-blue-600 hover:underline">
+=======
+            <p class="text-gray-700 mb-4"><strong>Contactpersoon:</strong> Adan Julien</p>
+            <a href="https://www.google.be/maps/place/Dapperenstraat,%2020+1081+Koekelberg+Belgium" target="_blank" class="text-blue-600 hover:underline">
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
                 Bekijk op Google Maps
             </a>
         </div>

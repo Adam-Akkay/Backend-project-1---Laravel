@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+<<<<<<< HEAD
 use App\Mail\PasswordResetMail;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -95,4 +96,11 @@ class PasswordResetController extends Controller
 
         return redirect()->route('login')->with('success', 'Uw wachtwoord is succesvol gereset. U kunt nu inloggen.');
     }
+=======
+use Illuminate\Http\Request;
+
+class PasswordResetController extends Controller
+{
+    //
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
 }

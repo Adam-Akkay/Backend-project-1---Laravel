@@ -11,6 +11,7 @@ use Illuminate\Validation\Rules\Password;
 class UserController extends Controller
 {
     /**
+<<<<<<< HEAD
      * Email address of the protected admin user that cannot be deleted
      */
     private const PROTECTED_ADMIN_EMAIL = 'admin@ehb.be';
@@ -24,6 +25,8 @@ class UserController extends Controller
     }
 
     /**
+=======
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
      * Display a listing of users
      */
     public function index()
@@ -67,12 +70,15 @@ class UserController extends Controller
      */
     public function toggleAdmin(User $user)
     {
+<<<<<<< HEAD
         // Prevent removing admin role from protected admin
         if ($this->isProtectedAdmin($user) && $user->role === 'admin') {
             return redirect()->route('admin.users.index')
                 ->with('error', 'De admin rechten van de hoofdbeheerder kunnen niet worden verwijderd.');
         }
 
+=======
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
         $user->update([
             'role' => $user->role === 'admin' ? 'user' : 'admin',
         ]);
@@ -83,6 +89,7 @@ class UserController extends Controller
 
         return redirect()->route('admin.users.index')->with('success', $message);
     }
+<<<<<<< HEAD
 
     /**
      * Remove the specified user
@@ -116,4 +123,6 @@ class UserController extends Controller
         return redirect()->route('admin.users.index')
             ->with('success', 'Gebruiker succesvol verwijderd. Het e-mailadres is nu beschikbaar voor nieuwe registraties.');
     }
+=======
+>>>>>>> d8a97282b9145629dc952d67913417992d407051
 }
